@@ -3,20 +3,20 @@
 # kind: Namespace
 # metadata:
 #   name: web-npv
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: web-npv-service
-#   namespace: web-npv
-  labels:
-    app: nginx
-spec:
-  type: ClusterIP
-  ports:
-  - port: 80
-  selector:
-    app: nginx
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: web-npv-service
+# #   namespace: web-npv
+#   labels:
+#     app: nginx
+# spec:
+#   type: ClusterIP
+#   ports:
+#   - port: 80
+#   selector:
+#     app: nginx
 ---
 apiVersion: apps/v1
 kind: Deployment
